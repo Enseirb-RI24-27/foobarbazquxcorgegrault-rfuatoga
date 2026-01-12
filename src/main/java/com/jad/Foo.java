@@ -9,6 +9,14 @@ public class Foo {
     private Corge corge;
     private List<Grault> graults;
 
+    public Foo(Bar bar, List<Baz> bazs, Qux qux, Corge corge, List<Grault> graults) {
+        this.bar = bar;
+        this.bazs = bazs;
+        this.qux = qux;
+        this.corge = corge;
+        this.graults = graults;
+    }
+
     public Bar getBar() {
         return this.bar;
     }
@@ -31,10 +39,6 @@ public class Foo {
 
     public List<Grault> getGraults() {
         return this.graults;
-    }
-
-    public Foo(Bar bar) {
-        this.bar = bar;
     }
 
     public void addBaz(Baz baz) {
