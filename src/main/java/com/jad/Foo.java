@@ -3,6 +3,12 @@ package com.jad;
 import java.util.List;
 
 public class Foo {
+    private final Bar bar;
+    private List<Baz> bazs;
+    private Qux qux;
+    private Corge corge;
+    private List<Grault> graults;
+
     public Bar getBar() {
         return this.bar;
     }
@@ -11,16 +17,8 @@ public class Foo {
         return this.bazs;
     }
 
-    public void setBazs(List<Baz> bazs) {
-        this.bazs = bazs;
-    }
-
     public Qux getQux() {
         return this.qux;
-    }
-
-    public void setQux(Qux qux) {
-        this.qux = qux;
     }
 
     public Corge getCorge() {
@@ -34,16 +32,6 @@ public class Foo {
     public List<Grault> getGraults() {
         return this.graults;
     }
-
-    public void setGraults(List<Grault> graults) {
-        this.graults = graults;
-    }
-
-    private final Bar bar;
-    private List<Baz> bazs;
-    private Qux qux;
-    private Corge corge;
-    private List<Grault> graults;
 
     public Foo(Bar bar) {
         this.bar = bar;
