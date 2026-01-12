@@ -18,6 +18,6 @@ public class Foo {
     }
 
     public void addGrault() {
-        this.graults.add(new Grault());
+        this.graults.add(new Grault(this));
     }
 }
