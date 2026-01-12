@@ -9,12 +9,11 @@ public class Foo {
     private Corge corge;
     private List<Grault> graults;
 
-    public Foo(Bar bar, List<Baz> bazs, Qux qux, Corge corge, List<Grault> graults) {
+    public Foo(Bar bar) {
         this.bar = bar;
-        this.bazs = bazs;
-        this.qux = qux;
-        this.corge = corge;
-        this.graults = graults;
+        this.qux = new Qux();
+        this.addGrault();
+        this.addBaz(new Baz());
     }
 
     public Bar getBar() {
